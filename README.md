@@ -1,3 +1,1 @@
-# ai-pr-review 
-
-commit 1
+### 🤖 Automated AI-powered code review for pull requests using OpenAI GPT-4

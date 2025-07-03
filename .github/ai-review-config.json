@@ -1,0 +1,32 @@
+{
+  "rules": [
+    "Check for potential bugs and security vulnerabilities",
+    "Suggest code improvements and best practices",
+    "Verify proper error handling and edge cases",
+    "Check for code duplication and suggest refactoring",
+    "Ensure proper naming conventions and code readability",
+    "Verify that new features have appropriate tests"
+  ],
+  "exclude_files": [
+    "*.md",
+    "*.json",
+    "*.lock",
+    "package-lock.json",
+    "yarn.lock",
+    "*.log"
+  ],
+  "include_file_types": [
+    ".js",
+    ".ts",
+    ".jsx",
+    ".tsx",
+    ".py",
+    ".java",
+    ".cpp",
+    ".c",
+    ".cs",
+    ".go",
+    ".rb",
+    ".php"
+  ]
+}

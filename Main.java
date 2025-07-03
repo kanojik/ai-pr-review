@@ -1,10 +1,19 @@
+import java.util.List;
+
 public class Main {
 
-  public static void main(String[] args) {
-    double totalMarks = 500.0; // Total marks possible
-    double obtainedMarks = 385.0; // Marks obtained by the student
-    double percentage = (obtainedMarks / totalMarks) * 100; // Calculate percentage
-    System.out.printf("The percentage is: %.2f%%\n", percentage); // Print the percentage with two decimal places
-  }
+    public static void main(String[] args) {
 
+      // Write few sample code for ai review test
+
+      List<String> items = List.of("apple", "banana", "cherry");
+      for (String item : items) {
+          System.out.println("Item: " + item);
+      }
+
+      List<?> numbers = List.of(1, 2, 3, 4, 5);
+      for (Object number : numbers) {
+          System.out.println("Number: " + number);
+      }
+    }
 }

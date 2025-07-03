@@ -1,11 +1,15 @@
 {
   "rules": [
-    "Check for potential bugs and security vulnerabilities",
-    "Suggest code improvements and best practices",
-    "Verify proper error handling and edge cases",
-    "Check for code duplication and suggest refactoring",
-    "Ensure proper naming conventions and code readability",
-    "Verify that new features have appropriate tests"
+    "**SECURITY**: Identify SQL injection, XSS, authentication bypasses, and insecure data handling",
+    "**PERFORMANCE**: Flag inefficient algorithms, memory leaks, unnecessary loops, and blocking operations",
+    "**BUGS**: Detect null pointer exceptions, array bounds issues, race conditions, and logical errors",
+    "**CODE QUALITY**: Suggest better variable names, remove code duplication, and improve readability",
+    "**ARCHITECTURE**: Recommend design patterns, SOLID principles, and proper separation of concerns",
+    "**TESTING**: Ensure unit tests cover edge cases, integration tests exist, and mocking is appropriate",
+    "**ERROR HANDLING**: Verify try-catch blocks, proper exception types, and graceful failure handling",
+    "**DOCUMENTATION**: Check for missing javadoc, inline comments for complex logic, and README updates",
+    "**DEPENDENCY MANAGEMENT**: Review new dependencies for security vulnerabilities and licensing issues",
+    "**STANDARDS**: Enforce coding standards, formatting consistency, and naming conventions"
   ],
   "exclude_files": [
     "*.md",
@@ -13,7 +17,13 @@
     "*.lock",
     "package-lock.json",
     "yarn.lock",
-    "*.log"
+    "*.log",
+    "*.min.js",
+    "*.min.css",
+    "dist/**",
+    "build/**",
+    "node_modules/**",
+    ".git/**"
   ],
   "include_file_types": [
     ".js",
@@ -27,6 +37,25 @@
     ".cs",
     ".go",
     ".rb",
-    ".php"
-  ]
+    ".php",
+    ".kt",
+    ".swift",
+    ".rs",
+    ".scala",
+    ".sql"
+  ],
+  "review_depth": "comprehensive",
+  "focus_areas": [
+    "security_vulnerabilities",
+    "performance_optimization",
+    "code_maintainability",
+    "test_coverage",
+    "error_handling"
+  ],
+  "severity_levels": {
+    "critical": "Security vulnerabilities, data corruption risks",
+    "high": "Performance issues, logical errors, missing error handling",
+    "medium": "Code quality improvements, refactoring opportunities",
+    "low": "Style inconsistencies, minor optimizations"
+  }
 }
